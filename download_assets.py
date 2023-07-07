@@ -98,7 +98,16 @@ def update_resource(resource_main_url, resource):
         and os.path.getsize(raw_path) == resource["resource_size"]
     ):
         print(raw_path)
-        data = requests.get(url).content
+        data=False
+        while True:
+            try:
+                data = requests.get(url).content
+            except Exception as err:
+                print(err)
+                print(f"Error occurent when downloading {raw_path}, retry...")
+            if data != False:
+                if len(data) == resource["resource_size"]:
+                    break
         with open(raw_path, "wb") as f:
             f.write(data)
         
