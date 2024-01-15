@@ -1,0 +1,17 @@
+version: '4.0'
+
+services:
+  batool:
+    build:
+      context: .
+      args:
+        UID: 1000
+        GID: 1000
+      tags:
+        - batool
+    environment:
+      UID: 1000
+      GID: 1000
+    volumes:
+      - ./extracted:/home/python/code/extracted
+      - ./raw:/home/python/code/raw

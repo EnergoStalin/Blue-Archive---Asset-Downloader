@@ -6,7 +6,7 @@ import subprocess
 
 ROOT = os.path.dirname(os.path.realpath(__file__))
 DUMP_FP = os.path.join(ROOT, "dump.cs")
-FLATC = os.path.join(ROOT, "lib", "flatc.exe")
+FLATC = "flatc"
 FBS_FP = os.path.join(ROOT, "BlueArchive.fbs")
 
 
