@@ -5285,7 +5285,7 @@ table ArenaRewardExcelTable{
 
 table ArenaRewardExcel{
     UniqueId: long;
-    ArenaRewardType_: ArenaRewardType;
+    ArenaRewardType: ArenaRewardType;
     RankStart: long;
     RankEnd: long;
     RankIconPath: string;
@@ -5340,8 +5340,8 @@ table AttendanceExcel{
     StartableEndDate: string;
     EndDate: string;
     ExpiryDate: long;
-    MailType_: MailType;
-    DialogCategory_: DialogCategory;
+    MailType: MailType;
+    DialogCategory: DialogCategory;
     TitleImagePath: string;
     DecorationImagePath: string;
 }
@@ -5383,7 +5383,7 @@ table BGMExcelTable{
 
 table BGMExcel{
     Id: long;
-    ProductionStep_: ProductionStep;
+    ProductionStep: ProductionStep;
     Path: string;
     Volume: float;
     LoopStartTime: float;
@@ -5442,11 +5442,11 @@ table BossExternalBTExcelTable{
 table BossExternalBTExcel{
     CharacterId: long;
     AIPhase: long;
-    ExternalBTNodeType_: ExternalBTNodeType;
-    ExternalBTTrigger_: ExternalBTTrigger;
+    ExternalBTNodeType: ExternalBTNodeType;
+    ExternalBTTrigger: ExternalBTTrigger;
     TriggerArgument: string;
     BehaviorRate: long;
-    ExternalBehavior_: ExternalBehavior;
+    ExternalBehavior: ExternalBehavior;
     BehaviorArgument: string;
 }
 
@@ -5479,10 +5479,10 @@ table BulletArmorDamageFactorExcelTable{
 
 table BulletArmorDamageFactorExcel{
     DamageFactorGroupId: string;
-    BulletType_: BulletType;
-    ArmorType_: ArmorType;
+    BulletType: BulletType;
+    ArmorType: ArmorType;
     DamageRate: long;
-    DamageAttribute_: DamageAttribute;
+    DamageAttribute: DamageAttribute;
     MinDamageRate: long;
     MaxDamageRate: long;
     ShowHighlightFloater: bool;
@@ -5589,12 +5589,12 @@ table CampaignStageExcel{
     StrategyMapBG: string;
     CampaignStageRewardId: long;
     MaxTurn: int;
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     RecommandLevel: int;
     BgmId: string;
-    StrategyEnvironment_: StrategyEnvironment;
+    StrategyEnvironment: StrategyEnvironment;
     GroundId: long;
-    ContentType_: ContentType;
+    ContentType: ContentType;
     BGMId: long;
     FirstClearReportEventName: string;
     FirstClearFunnelMessage: string;
@@ -5609,7 +5609,7 @@ table CampaignStageRewardExcelTable{
 
 table CampaignStageRewardExcel{
     GroupId: long;
-    RewardTag_: RewardTag;
+    RewardTag: RewardTag;
     StageRewardProb: int;
     StageRewardParcelType: ParcelType;
     StageRewardId: long;
@@ -5626,7 +5626,7 @@ table CampaignStrategyObjectExcel{
     Key: uint;
     Name: string;
     PrefabName: string;
-    StrategyObjectType_: StrategyObjectType;
+    StrategyObjectType: StrategyObjectType;
     StrategyRewardParcelType: ParcelType;
     StrategyRewardID: long;
     StrategyRewardName: string;
@@ -5663,7 +5663,7 @@ table CharacterAIExcelTable{
 
 table CharacterAIExcel{
     Id: long;
-    EngageType_: EngageType;
+    EngageType: EngageType;
     Positioning: PositioningType;
     DistanceReduceRatioObstaclePath: long;
     DistanceReduceObstaclePath: long;
@@ -5703,13 +5703,13 @@ table CharacterDialogEventExcelTable{
 table CharacterDialogEventExcel{
     CharacterId: long;
     EventID: long;
-    ProductionStep_: ProductionStep;
-    DialogCategory_: DialogCategory;
-    DialogCondition_: DialogCondition;
-    DialogConditionDetail_: DialogConditionDetail;
+    ProductionStep: ProductionStep;
+    DialogCategory: DialogCategory;
+    DialogCondition: DialogCondition;
+    DialogConditionDetail: DialogConditionDetail;
     DialogConditionDetailValue: long;
     GroupId: long;
-    DialogType_: DialogType;
+    DialogType: DialogType;
     ActionName: string;
     Duration: long;
     AnimationName: string;
@@ -5735,14 +5735,14 @@ table CharacterDialogExcelTable{
 
 table CharacterDialogExcel{
     CharacterId: long;
-    ProductionStep_: ProductionStep;
-    DialogCategory_: DialogCategory;
-    DialogCondition_: DialogCondition;
-    Anniversary_: Anniversary;
+    ProductionStep: ProductionStep;
+    DialogCategory: DialogCategory;
+    DialogCondition: DialogCondition;
+    Anniversary: Anniversary;
     StartDate: string;
     EndDate: string;
     GroupId: long;
-    DialogType_: DialogType;
+    DialogType: DialogType;
     ActionName: string;
     Duration: long;
     AnimationName: string;
@@ -5769,27 +5769,27 @@ table CharacterExcelTable{
 table CharacterExcel{
     Id: long;
     DevName: string;
-    ProductionStep_: ProductionStep;
+    ProductionStep: ProductionStep;
     CollectionVisible: bool;
     IsPlayableCharacter: bool;
     LocalizeEtcId: uint;
-    Rarity_: Rarity;
-    TacticEntityType_: TacticEntityType;
+    Rarity: Rarity;
+    TacticEntityType: TacticEntityType;
     CanSurvive: bool;
     IsDummy: bool;
     SubPartsCount: int;
-    TacticRole_: TacticRole;
-    WeaponType_: WeaponType;
-    TacticRange_: TacticRange;
-    BulletType_: BulletType;
-    ArmorType_: ArmorType;
-    AimIKType_: AimIKType;
-    School_: School;
-    Club_: Club;
+    TacticRole: TacticRole;
+    WeaponType: WeaponType;
+    TacticRange: TacticRange;
+    BulletType: BulletType;
+    ArmorType: ArmorType;
+    AimIKType: AimIKType;
+    School: School;
+    Club: Club;
     DefaultStarGrade: int;
     MaxStarGrade: int;
-    StatLevelUpType_: StatLevelUpType;
-    SquadType_: SquadType;
+    StatLevelUpType: StatLevelUpType;
+    SquadType: SquadType;
     Jumpable: bool;
     PersonalityId: long;
     CharacterAIId: long;
@@ -5799,7 +5799,7 @@ table CharacterExcel{
     EquipmentSlot: [EquipmentCategory];
     SpineResourceName: string;
     SpineResourceNameDiorama: string;
-    EntityMaterialType_: EntityMaterialType;
+    EntityMaterialType: EntityMaterialType;
     ModelPrefabName: string;
     TextureDir: string;
     TextureEchelon: string;
@@ -5944,8 +5944,8 @@ table CharacterStatLimitExcelTable{
 
 table CharacterStatLimitExcel{
     Id: long;
-    TacticEntityType_: TacticEntityType;
-    StatType_: StatType;
+    TacticEntityType: TacticEntityType;
+    StatType: StatType;
     StatMinValue: long;
     StatMaxValue: long;
     StatRatioMinValue: long;
@@ -5995,7 +5995,7 @@ table CharacterWeaponExcel{
     Id: long;
     ImagePath: string;
     SetRecipe: long;
-    StatLevelUpType_: StatLevelUpType;
+    StatLevelUpType: StatLevelUpType;
     AttackPower: long;
     AttackPower100: long;
     MaxHP: long;
@@ -6016,7 +6016,7 @@ table CharacterWeaponExpBonusExcelTable{
 }
 
 table CharacterWeaponExpBonusExcel{
-    WeaponType_: WeaponType;
+    WeaponType: WeaponType;
     WeaponExpGrowthA: int;
     WeaponExpGrowthB: int;
     WeaponExpGrowthC: int;
@@ -6039,7 +6039,7 @@ table ClanAssistSlotExcelTable{
 
 table ClanAssistSlotExcel{
     SlotId: long;
-    EchelonType_: EchelonType;
+    EchelonType: EchelonType;
     SlotNumber: long;
     AssistTermRewardPeriodFromSec: long;
     AssistRewardLimit: long;
@@ -6067,8 +6067,8 @@ table ClanRewardExcelTable{
 }
 
 table ClanRewardExcel{
-    ClanRewardType_: ClanRewardType;
-    EchelonType_: EchelonType;
+    ClanRewardType: ClanRewardType;
+    EchelonType: EchelonType;
     RewardParcelType: ParcelType;
     RewardParcelId: long;
     RewardParcelAmount: long;
@@ -6080,7 +6080,7 @@ table CombatEmojiExcelTable{
 
 table CombatEmojiExcel{
     UniqueId: long;
-    EmojiEvent_: EmojiEvent;
+    EmojiEvent: EmojiEvent;
     OrderOfPriority: int;
     EmojiDuration: bool;
     EmojiReversal: bool;
@@ -6371,7 +6371,7 @@ table ContentsScenarioExcelTable{
 table ContentsScenarioExcel{
     Id: uint;
     LocalizeId: uint;
-    ScenarioContentType_: ScenarioContentType;
+    ScenarioContentType: ScenarioContentType;
     ScenarioGroupId: [long];
 }
 
@@ -6381,7 +6381,7 @@ table CouponStuffExcelTable{
 
 table CouponStuffExcel{
     StuffId: long;
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelId: long;
     LimitAmount: int;
     CouponStuffNameLocalizeKey: string;
@@ -6412,11 +6412,11 @@ table CurrencyExcel{
     CurrencyType: CurrencyTypes;
     CurrencyName: string;
     Icon: string;
-    Rarity_: Rarity;
+    Rarity: Rarity;
     AutoChargeMsc: int;
     AutoChargeAmount: int;
-    CurrencyOverChargeType_: CurrencyOverChargeType;
-    CurrencyAdditionalChargeType_: CurrencyAdditionalChargeType;
+    CurrencyOverChargeType: CurrencyOverChargeType;
+    CurrencyAdditionalChargeType: CurrencyAdditionalChargeType;
     ChargeLimit: long;
     OverChargeLimit: long;
     SpriteName: string;
@@ -6474,7 +6474,7 @@ table DefaultMailExcelTable{
 table DefaultMailExcel{
     Id: long;
     LocalizeCodeId: uint;
-    MailType_: MailType;
+    MailType: MailType;
     MailSendPeriodFrom: string;
     MailSendPeriodTo: string;
     RewardParcelType: [ParcelType];
@@ -6487,7 +6487,7 @@ table DefaultParcelExcelTable{
 }
 
 table DefaultParcelExcel{
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelId: long;
     ParcelAmount: long;
 }
@@ -6511,8 +6511,8 @@ table EquipmentExcelTable{
 
 table EquipmentExcel{
     Id: long;
-    EquipmentCategory_: EquipmentCategory;
-    Rarity_: Rarity;
+    EquipmentCategory: EquipmentCategory;
+    Rarity: Rarity;
     LocalizeEtcId: uint;
     Wear: bool;
     MaxLevel: int;
@@ -6544,7 +6544,7 @@ table EquipmentStatExcelTable{
 
 table EquipmentStatExcel{
     EquipmentId: long;
-    StatLevelUpType_: StatLevelUpType;
+    StatLevelUpType: StatLevelUpType;
     StatType: [EquipmentOptionType];
     MinStat: [long];
     MaxStat: [long];
@@ -6552,7 +6552,7 @@ table EquipmentStatExcel{
     LevelUpFeedExp: long;
     LevelUpFeedCostCurrency: CurrencyTypes;
     LevelUpFeedCostAmount: long;
-    EquipmentCategory_: EquipmentCategory;
+    EquipmentCategory: EquipmentCategory;
     LevelUpFeedAddExp: long;
     DefaultMaxLevel: int;
     TranscendenceMax: int;
@@ -6648,7 +6648,7 @@ table EventContentCardShopExcelTable{
 table EventContentCardShopExcel{
     EventContentId: long;
     Id: long;
-    Rarity_: Rarity;
+    Rarity: Rarity;
     CostGoodsId: long;
     IsLegacy: bool;
     CardGroupId: int;
@@ -6693,7 +6693,7 @@ table EventContentCurrencyItemExcelTable{
 
 table EventContentCurrencyItemExcel{
     EventContentId: long;
-    EventContentItemType_: EventContentItemType;
+    EventContentItemType: EventContentItemType;
     ItemUniqueId: long;
 }
 
@@ -6704,7 +6704,7 @@ table EventContentDebuffRewardExcelTable{
 table EventContentDebuffRewardExcel{
     EventContentId: long;
     EventStageId: long;
-    EventContentItemType_: EventContentItemType;
+    EventContentItemType: EventContentItemType;
     RewardPercentage: long;
 }
 
@@ -6792,9 +6792,9 @@ table EventContentSeasonExcelTable{
 table EventContentSeasonExcel{
     EventContentId: long;
     Name: string;
-    EventContentType_: EventContentType;
-    OpenConditionContent_: OpenConditionContent;
-    ContentLockType_: ContentLockType;
+    EventContentType: EventContentType;
+    OpenConditionContent: OpenConditionContent;
+    ContentLockType: ContentLockType;
     EventDisplay: bool;
     EventItemId: long;
     BeforehandExposedTime: string;
@@ -6826,7 +6826,7 @@ table EventContentShopExcel{
     SalePeriodTo: string;
     PurchaseCooltimeMin: long;
     PurchaseCountLimit: long;
-    PurchaseCountResetType_: PurchaseCountResetType;
+    PurchaseCountResetType: PurchaseCountResetType;
     BuyReportEventName: string;
 }
 
@@ -6880,7 +6880,7 @@ table EventContentSpineDialogOffsetExcelTable{
 
 table EventContentSpineDialogOffsetExcel{
     EventContentId: long;
-    EventContentType_: EventContentType;
+    EventContentType: EventContentType;
     CharacterId: long;
     SpineOffsetX: float;
     SpineOffsetY: float;
@@ -6896,7 +6896,7 @@ table EventContentStageExcel{
     Id: long;
     Name: string;
     EventContentId: long;
-    StageDifficulty_: StageDifficulty;
+    StageDifficulty: StageDifficulty;
     StageNumber: int;
     StageDisplay: int;
     PrevStageId: long;
@@ -6915,12 +6915,12 @@ table EventContentStageExcel{
     StrategyMapBG: string;
     EventContentStageRewardId: long;
     MaxTurn: int;
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     RecommandLevel: int;
     BgmId: string;
-    StrategyEnvironment_: StrategyEnvironment;
+    StrategyEnvironment: StrategyEnvironment;
     GroundID: long;
-    ContentType_: ContentType;
+    ContentType: ContentType;
     BGMId: long;
     InstantClear: bool;
     BuffContentId: long;
@@ -6933,7 +6933,7 @@ table EventContentStageRewardExcelTable{
 
 table EventContentStageRewardExcel{
     GroupId: long;
-    RewardTag_: RewardTag;
+    RewardTag: RewardTag;
     RewardProb: int;
     RewardParcelType: ParcelType;
     RewardId: long;
@@ -7014,7 +7014,7 @@ table FloaterCommonExcelTable{
 
 table FloaterCommonExcel{
     Id: long;
-    TacticEntityType_: TacticEntityType;
+    TacticEntityType: TacticEntityType;
     FloaterOffsetPosX: int;
     FloaterOffsetPosY: int;
     FloaterRandomPosRangeX: int;
@@ -7038,8 +7038,8 @@ table FurnitureExcelTable{
 
 table FurnitureExcel{
     Id: long;
-    ProductionStep_: ProductionStep;
-    Rarity_: Rarity;
+    ProductionStep: ProductionStep;
+    Rarity: Rarity;
     Category: FurnitureCategory;
     SubCategory: FurnitureSubCategory;
     LocalizeEtcId: uint;
@@ -7068,7 +7068,7 @@ table FurnitureExcel{
     EventCollectionId: long;
     EventCollectionBubbleOffsetX: long;
     EventCollectionBubbleOffsetY: long;
-    MultipleConditionCheckType_: MultipleConditionCheckType;
+    MultipleConditionCheckType: MultipleConditionCheckType;
     CafeCharacterState_: [CafeCharacterState];
 }
 
@@ -7163,9 +7163,9 @@ table GachaElementExcelTable{
 table GachaElementExcel{
     ID: long;
     GachaGroupID: long;
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelID: long;
-    Rarity_: Rarity;
+    Rarity: Rarity;
     ParcelAmountMin: int;
     ParcelAmountMax: int;
     Prob: int;
@@ -7179,7 +7179,7 @@ table GachaElementRecursiveExcelTable{
 table GachaElementRecursiveExcel{
     ID: long;
     GachaGroupID: long;
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelID: long;
     ParcelAmountMin: int;
     ParcelAmountMax: int;
@@ -7205,7 +7205,7 @@ table GoodsExcelTable{
 table GoodsExcel{
     Id: long;
     Type: int;
-    Rarity_: Rarity;
+    Rarity: Rarity;
     IconPath: string;
     ConsumeParcelType: [ParcelType];
     ConsumeParcelId: [long];
@@ -7228,7 +7228,7 @@ table GroundExcel{
     StageFileName: [string];
     GroundSceneName: string;
     FormationGroupId: long;
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     EnemyArmorType: ArmorType;
     LevelMinion: long;
     LevelElite: long;
@@ -7377,10 +7377,10 @@ table ItemExcelTable{
 
 table ItemExcel{
     Id: long;
-    Rarity_: Rarity;
-    ProductionStep_: ProductionStep;
+    Rarity: Rarity;
+    ProductionStep: ProductionStep;
     LocalizeEtcId: uint;
-    ItemCategory_: ItemCategory;
+    ItemCategory: ItemCategory;
     Quality: long;
     Icon: string;
     SpriteName: string;
@@ -7390,7 +7390,7 @@ table ItemExcel{
     UsingResultParcelType: ParcelType;
     UsingResultId: long;
     UsingResultAmount: long;
-    MailType_: MailType;
+    MailType: MailType;
     ExpiryChangeParcelType: ParcelType;
     ExpiryChangeId: long;
     ExpiryChangeAmount: long;
@@ -7431,7 +7431,7 @@ table LimitedStageExcel{
     Id: long;
     Name: string;
     SeasonId: long;
-    StageDifficulty_: StageDifficulty;
+    StageDifficulty: StageDifficulty;
     StageNumber: int;
     StageDisplay: int;
     PrevStageId: long;
@@ -7449,12 +7449,12 @@ table LimitedStageExcel{
     StrategyMapBG: string;
     StageRewardId: long;
     MaxTurn: int;
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     RecommandLevel: int;
     BgmId: string;
-    StrategyEnvironment_: StrategyEnvironment;
+    StrategyEnvironment: StrategyEnvironment;
     GroundID: long;
-    ContentType_: ContentType;
+    ContentType: ContentType;
     BGMId: long;
     InstantClear: bool;
     BuffContentId: long;
@@ -7467,7 +7467,7 @@ table LimitedStageRewardExcelTable{
 
 table LimitedStageRewardExcel{
     GroupId: long;
-    RewardTag_: RewardTag;
+    RewardTag: RewardTag;
     RewardProb: int;
     RewardParcelType: ParcelType;
     RewardId: long;
@@ -7851,7 +7851,7 @@ table MemoryLobbyExcelTable{
 
 table MemoryLobbyExcel{
     Id: long;
-    ProductionStep_: ProductionStep;
+    ProductionStep: ProductionStep;
     LocalizeEtcId: uint;
     CharacterId: long;
     PrefabName: string;
@@ -7873,7 +7873,7 @@ table MessagePopupExcelTable{
 
 table MessagePopupExcel{
     StringId: uint;
-    MessagePopupLayout_: MessagePopupLayout;
+    MessagePopupLayout: MessagePopupLayout;
     OrderType: MessagePopupImagePositionType;
     Image: string;
     TitleText: uint;
@@ -8089,7 +8089,7 @@ table OpenConditionExcel{
     HideWhenLocked: bool;
     AccountLevel: long;
     CampaignStageId: long;
-    MultipleConditionCheckType_: MultipleConditionCheckType;
+    MultipleConditionCheckType: MultipleConditionCheckType;
     OpenDayOfWeek: WeekDay;
     OpenHour: long;
     CloseDayOfWeek: WeekDay;
@@ -8104,7 +8104,7 @@ table OperatorExcelTable{
 table OperatorExcel{
     UniqueId: long;
     GroupId: string;
-    OperatorCondition_: OperatorCondition;
+    OperatorCondition: OperatorCondition;
     OutputSequence: int;
     RandomWeight: int;
     OutputDelay: int;
@@ -8135,7 +8135,7 @@ table PickupDuplicateBonusExcelTable{
 
 table PickupDuplicateBonusExcel{
     Id: long;
-    ShopCategoryType_: ShopCategoryType;
+    ShopCategoryType: ShopCategoryType;
     ShopId: long;
     PickupCharacterId: long;
     RewardParcelType: ParcelType;
@@ -8177,7 +8177,7 @@ table PresetParcelsExcelTable{
 }
 
 table PresetParcelsExcel{
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelId: long;
     PresetGroupId: long;
     ParcelAmount: long;
@@ -8190,10 +8190,10 @@ table ProductExcelTable{
 table ProductExcel{
     Id: long;
     ProductId: string;
-    StoreType_: StoreType;
+    StoreType: StoreType;
     Price: long;
     PriceReference: string;
-    PurchasePeriodType_: PurchasePeriodType;
+    PurchasePeriodType: PurchasePeriodType;
     PurchasePeriodLimit: long;
     ParcelType_: [ParcelType];
     ParcelId: [long];
@@ -8207,7 +8207,7 @@ table ProductMonthlyExcelTable{
 table ProductMonthlyExcel{
     Id: long;
     ProductId: string;
-    StoreType_: StoreType;
+    StoreType: StoreType;
     Price: long;
     PriceReference: string;
     MonthlyDays: long;
@@ -8225,8 +8225,8 @@ table ProtocolSettingExcelTable{
 
 table ProtocolSettingExcel{
     Protocol: string;
-    ContentLockType_: ContentLockType;
-    OpenConditionContent_: OpenConditionContent;
+    ContentLockType: ContentLockType;
+    OpenConditionContent: OpenConditionContent;
     Currency: bool;
     Inventory: bool;
     Mail: bool;
@@ -8286,7 +8286,7 @@ table RaidStageExcel{
     BGPath: string;
     RaidCharacterId: long;
     BossCharacterId: [long];
-    Difficulty_: Difficulty;
+    Difficulty: Difficulty;
     DifficultyOpenCondition: bool;
     MaxPlayerCount: long;
     StageCreateCostType: CurrencyTypes;
@@ -8298,7 +8298,7 @@ table RaidStageExcel{
     GroundId: long;
     GroundDevName: string;
     EnterTimeLine: string;
-    TacticEnvironment_: TacticEnvironment;
+    TacticEnvironment: TacticEnvironment;
     SeasonDamageRatio: int;
     DefaultClearScore: long;
     MaximumScore: long;
@@ -8356,7 +8356,7 @@ table RecipeCraftExcelTable{
 table RecipeCraftExcel{
     Id: long;
     DevName: string;
-    RecipeType_: RecipeType;
+    RecipeType: RecipeType;
     RecipeIngredientId: long;
     RecipeIngredientDevName: string;
     ParcelType_: [ParcelType];
@@ -8372,7 +8372,7 @@ table RecipeExcelTable{
 
 table RecipeExcel{
     Id: long;
-    RecipeType_: RecipeType;
+    RecipeType: RecipeType;
     RecipeIngredientId: long;
     ParcelType_: [ParcelType];
     ParcelId: [long];
@@ -8386,7 +8386,7 @@ table RecipeIngredientExcelTable{
 
 table RecipeIngredientExcel{
     Id: long;
-    RecipeType_: RecipeType;
+    RecipeType: RecipeType;
     CostParcelType: [ParcelType];
     CostId: [long];
     CostAmount: [long];
@@ -8413,7 +8413,7 @@ table MoveEnd{
 }
 
 table Form{
-    MoveEnd_: MoveEnd;
+    MoveEnd: MoveEnd;
     PublicSkill: Motion;
 }
 
@@ -8443,7 +8443,7 @@ table ScenarioBGNameExcelTable{
 
 table ScenarioBGNameExcel{
     Name: uint;
-    ProductionStep_: ProductionStep;
+    ProductionStep: ProductionStep;
     BGFileName: string;
     BGType: ScenarioBGType;
     AnimationRoot: string;
@@ -8481,7 +8481,7 @@ table ScenarioCharacterNameExcelTable{
 
 table ScenarioCharacterNameExcel{
     CharacterName: uint;
-    ProductionStep_: ProductionStep;
+    ProductionStep: ProductionStep;
     NameKR: string;
     NicknameKR: string;
     NameJP: string;
@@ -8547,7 +8547,7 @@ table ScenarioModeExcel{
     NeedClub: Club;
     NeedClubStudentCount: int;
     NeedTSS: long;
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     FixedEchelonId: long;
     CompleteReportEventName: string;
 }
@@ -8922,7 +8922,7 @@ table SchoolDungeonRewardExcelTable{
 table SchoolDungeonRewardExcel{
     GroupId: long;
     DungeonType: SchoolDungeonType;
-    RewardTag_: RewardTag;
+    RewardTag: RewardTag;
     RewardParcelType: ParcelType;
     RewardParcelId: long;
     RewardParcelAmount: long;
@@ -8946,7 +8946,7 @@ table SchoolDungeonStageExcel{
     GroundId: int;
     StarGoal: [WeekDungeonStarGoalType];
     StarGoalAmount: [int];
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     RecommandLevel: long;
     StageRewardId: long;
     PlayTimeLimitInSeconds: long;
@@ -8957,7 +8957,7 @@ table ServiceActionExcelTable{
 }
 
 table ServiceActionExcel{
-    ServiceActionType_: ServiceActionType;
+    ServiceActionType: ServiceActionType;
     IsLegacy: bool;
     GoodsId: long;
 }
@@ -9001,7 +9001,7 @@ table ShopExcel{
     SalePeriodTo: string;
     PurchaseCooltimeMin: long;
     PurchaseCountLimit: long;
-    PurchaseCountResetType_: PurchaseCountResetType;
+    PurchaseCountResetType: PurchaseCountResetType;
     BuyReportEventName: string;
 }
 
@@ -9012,7 +9012,7 @@ table ShopInfoExcelTable{
 table ShopInfoExcel{
     CategoryType: ShopCategoryType;
     IsRefresh: bool;
-    ParcelType_: ParcelType;
+    ParcelType: ParcelType;
     ParcelId: long;
     AutoRefreshCoolTime: long;
     RefreshAbleCount: long;
@@ -9041,7 +9041,7 @@ table ShopRecruitExcel{
     RecruitSellectionShopId: long;
     PurchaseCooltimeMin: long;
     PurchaseCountLimit: long;
-    PurchaseCountResetType_: PurchaseCountResetType;
+    PurchaseCountResetType: PurchaseCountResetType;
     ProbabilityUrlDev: string;
     ProbabilityUrlLive: string;
 }
@@ -9083,7 +9083,7 @@ table SkillExcel{
     Level: int;
     SkillCost: int;
     EnemySkillCost: int;
-    BulletType_: BulletType;
+    BulletType: BulletType;
     StartCoolTime: int;
     CoolTime: int;
     EnemyStartCoolTime: int;
@@ -9157,7 +9157,7 @@ table SystemMailExcelTable{
 }
 
 table SystemMailExcel{
-    MailType_: MailType;
+    MailType: MailType;
     ExpiredDay: long;
     Sender: string;
     Comment: string;
@@ -9248,7 +9248,7 @@ table TerrainAdaptationFactorExcelTable{
 
 table TerrainAdaptationFactorExcel{
     TerrainAdaptation: StageTopography;
-    TerrainAdaptationStat_: TerrainAdaptationStat;
+    TerrainAdaptationStat: TerrainAdaptationStat;
     ShotFactor: long;
     BlockFactor: long;
     AccuracyFactor: long;
@@ -9262,7 +9262,7 @@ table ToastExcelTable{
 
 table ToastExcel{
     Id: uint;
-    ToastType_: ToastType;
+    ToastType: ToastType;
     MissionId: uint;
     TextId: uint;
     LifeTime: long;
@@ -9341,7 +9341,7 @@ table VoiceCommonExcelTable{
 }
 
 table VoiceCommonExcel{
-    VoiceEvent_: VoiceEvent;
+    VoiceEvent: VoiceEvent;
     Rate: long;
     VoiceHash: [uint];
 }
@@ -9404,7 +9404,7 @@ table WeekDungeonExcelTable{
 
 table WeekDungeonExcel{
     StageId: long;
-    WeekDungeonType_: WeekDungeonType;
+    WeekDungeonType: WeekDungeonType;
     Difficulty: int;
     BattleDuration: long;
     PrevStageId: long;
@@ -9413,7 +9413,7 @@ table WeekDungeonExcel{
     GroundId: int;
     StarGoal: [WeekDungeonStarGoalType];
     StarGoalAmount: [int];
-    StageTopography_: StageTopography;
+    StageTopography: StageTopography;
     RecommandLevel: long;
     StageRewardId: long;
     PlayTimeLimitInSeconds: long;
@@ -9442,7 +9442,7 @@ table WeekDungeonGroupBuffExcelTable{
 
 table WeekDungeonGroupBuffExcel{
     WeekDungeonBuffId: long;
-    School_: School;
+    School: School;
     RecommandLocalizeEtcId: uint;
     FormationLocalizeEtcId: uint;
     SkillGroupId: string;
@@ -9453,7 +9453,7 @@ table WeekDungeonOpenScheduleExcelTable{
 }
 
 table WeekDungeonOpenScheduleExcel{
-    WeekDay_: WeekDay;
+    WeekDay: WeekDay;
     Open: [WeekDungeonType];
 }
 
