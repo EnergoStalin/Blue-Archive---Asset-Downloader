@@ -1,4 +1,4 @@
-FROM mosthege/pythonnet:python3.11.2-mono6.12-pythonnet3.0.1
+FROM python:3.11-slim
 
 WORKDIR /home/python/code
 COPY . .
