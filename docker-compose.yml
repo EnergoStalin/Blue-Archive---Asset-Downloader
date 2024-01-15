@@ -15,3 +15,6 @@ services:
     volumes:
       - ./extracted:/home/python/code/extracted
       - ./raw:/home/python/code/raw
+      - ./BlueArchive.fbs:/home/python/code/BlueArchive.fbs
+      - ./dump.cs:/home/python/code/dump.cs
+      - ./version.txt:/home/python/code/version.txt

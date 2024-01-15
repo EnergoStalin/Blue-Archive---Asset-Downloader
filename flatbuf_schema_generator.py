@@ -6,7 +6,7 @@ import subprocess
 
 ROOT = os.path.dirname(os.path.realpath(__file__))
 DUMP_FP = os.path.join(ROOT, "dump.cs")
-FLATC = "flatc"
+FLATC = os.path.join(ROOT, "flatc")
 FBS_FP = os.path.join(ROOT, "BlueArchive.fbs")
 
 
@@ -32,7 +32,7 @@ def main():
     # create python wrapper
 
     # compile fbs schema to python
-    print(subprocess.run(f'"{FLATC}" --python --scoped-enums "{FBS_FP}"'))
+    print(subprocess.run(f'"{FLATC}" --python --scoped-enums "{FBS_FP}"', shell=True))
 
     # write init file
     init_fp = os.path.join(ROOT, "FlatData", "__init__.py")

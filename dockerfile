@@ -1,9 +1,10 @@
 FROM python:3.11-slim
 
 WORKDIR /home/python/code
-COPY requirements.txt .
+COPY requirements.txt download_flatbuffers.py .
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt && \
+    python download_flatbuffers.py
 
 COPY . .
 
